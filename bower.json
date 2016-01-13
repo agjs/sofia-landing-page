@@ -1,0 +1,22 @@
+{
+  "name": "sofia-theme",
+  "version": "0.0.0",
+  "authors": [
+    "Aleksandar Grbic <a@upbis.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}
