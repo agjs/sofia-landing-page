@@ -69,7 +69,7 @@ body {
   text-align: left;
   overflow-x: hidden !important;
   margin: auto !important;
-  background: $white;
+  background: #F7F8FA;
 }
 .align-center {
   text-align: center;
@@ -176,7 +176,16 @@ body {
       vertical-align: middle;
       img {
         max-height: 40px;
-        opacity: 0.6;
+        opacity: 0.4;
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter:grayscale(100%);
+        filter:url(grayscale.svg);
+        /* Firefox 4+ */
+        filter:gray;
+        /* IE 6-9 */
         &:hover {
           opacity: 1;
           -webkit-filter: initial;
@@ -187,6 +196,12 @@ body {
         display: block;
         padding: 5px;
       }
+    }
+    .lund-logo {
+      max-height: 55px;
+    }
+    .eurojuris-logo {
+      max-height: 30px;
     }
   }
 }
