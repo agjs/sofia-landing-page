@@ -71,6 +71,14 @@ body {
   margin: auto !important;
   background: #F7F8FA;
 }
+.white-wrapper {
+  width: 100%;
+  background: $white;
+  padding: 0 0 40px;
+  margin: 40px 0;
+  border-bottom: 1px solid #eaebec;
+  border-top: 1px solid #eaebec;
+}
 .align-center {
   text-align: center;
 }
@@ -206,7 +214,7 @@ body {
   }
 }
 .section-header {
-  margin-top: 90px;
+  margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
   h2 {
@@ -469,13 +477,7 @@ h5 {
   margin-bottom: 25px;
   position: relative;
   overflow: hidden;
-  border: 5px solid $white;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-  border-radius: 3px;
   border: 1px solid $color_mercury_approx;
-  border-bottom: 4px solid $color_mercury_approx;
   min-height: 100px;
   .social-icons {
     opacity: 1;
@@ -847,5 +849,40 @@ ul.social-icons {
     .transparent-text-dark {
       color: $color_mine_shaft_approx;
     }
+  }
+}
+.ai-robot-col {
+  & img {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+  }
+}
+.ai-robot-hand {
+  & img {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.1;
+  }
+}
+h5.no-span {
+  display: table;
+  white-space: nowrap;
+  font-size: 14px;
+  color:$color_lochmara_approx;
+  &:before,
+  &:after {
+    border-top: 1px solid $color_lochmara_approx;
+    content: '';
+    display: table-cell;
+    position: relative;
+    top: 0.5em;
+    width: 45%;
+  }
+  &:before {
+    right: 1.5%;
+  }
+  &:after {
+    left: 1.5%;
   }
 }
