@@ -4,22 +4,18 @@ $(function() {
     heightStyle: "content",
 
   });
-});
 
-$(function() {
   $("#news-acc").accordion({
     collapsible: true,
     heightStyle: "content",
     active: false
   });
-});
-
-$(function() {
+// https://github.com/jschr/textillate
   $('.tlt').textillate({ in : {
       effect: 'fadeIn'
     }
   });
-})
+});
 
 // https://github.com/kswedberg/jquery-smooth-scroll/blob/master/demo/index.html
 $(document).ready(function() {
