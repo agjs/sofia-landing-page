@@ -74,6 +74,17 @@ body {
 .fa {
   color: $color_lochmara_approx;
 }
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter:grayscale(100%);
+  filter:url(grayscale.svg);
+  /* Firefox 4+ */
+  filter:gray;
+  /* IE 6-9 */
+}
 .white-wrapper {
   width: 100%;
   background: $white;
@@ -568,9 +579,9 @@ h5 {
 }
 .contact-info {
   text-align: center;
-  background-color: $white;
   .section-overlay-layer {
     padding-top: 30px;
+    padding-bottom:30px;
   }
   .logo-container {
     margin-top: 20px;
@@ -737,8 +748,8 @@ header .navbar-brand {
   background-position: top center;
 }
 .widget-image-right img {
-  width: 300px;
-  margin-top: 100px;
+  margin-top: 70px;
+  margin-left: 40px;
 }
 .imac-image img {
   width: 85%;
@@ -937,9 +948,20 @@ ul li {
   background: white;
   outline: none;
   font-size: 14px;
+  border:0;
+  background:transparent;
+  font-family: 'Helvetica Neue', 'Helvetica Neue', 'Helvetica Neue';
+  font-size:16px;
+  line-height:28px;
 }
 .ui-accordion .ui-accordion-content {
   font-size: 14px;
+  border-radius: 0;
+  border:0;
+  background:transparent;
+  font-family: 'Helvetica Neue', 'Helvetica Neue', 'Helvetica Neue';
+  font-size:16px;
+  line-height:28px;
   ol {
     li {
       margin-bottom: 10px;
@@ -948,6 +970,37 @@ ul li {
   ul {
     li {
       margin-bottom: 10px;
+    }
+  }
+}
+
+#news-acc {
+
+
+  span {
+    color: #afafaf;
+    text-transform:uppercase;
+    font-size:11px;
+    float:right;
+  }
+
+  .ui-accordion .ui-accordion-icons {
+    border-radius: 0;
+    background: white;
+    outline: none;
+    font-size: 11px;
+  }
+  .ui-accordion .ui-accordion-content {
+    font-size: 14px;
+    ol {
+      li {
+        margin-bottom: 10px;
+      }
+    }
+    ul {
+      li {
+        margin-bottom: 10px;
+      }
     }
   }
 }
