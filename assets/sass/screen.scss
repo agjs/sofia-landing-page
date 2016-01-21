@@ -581,7 +581,7 @@ h5 {
   text-align: center;
   .section-overlay-layer {
     padding-top: 30px;
-    padding-bottom:30px;
+    padding-bottom: 30px;
   }
   .logo-container {
     margin-top: 20px;
@@ -652,6 +652,14 @@ h5 {
   width: 930px;
   margin: auto;
 }
+
+.menu-last-child {
+  color:#008ed6 !important;
+  border-left:1px dotted #eaeaea !important;
+  border-right:1px dotted #eaeaea !important;
+}
+
+
 nav.navbar-findcond {
   background: $white;
   border-color: $color_celeste_approx;
@@ -947,21 +955,21 @@ ul li {
   border-radius: 0;
   background: white;
   outline: none;
-  font-size: 14px;
-  border:0;
-  background:transparent;
+  border: 0;
+  background: transparent;
   font-family: 'Helvetica Neue', 'Helvetica Neue', 'Helvetica Neue';
-  font-size:16px;
-  line-height:28px;
+  font-size: 14px;
+  line-height: 28px;
+  text-transform: uppercase;
 }
 .ui-accordion .ui-accordion-content {
   font-size: 14px;
   border-radius: 0;
-  border:0;
-  background:transparent;
+  border: 0;
+  background: transparent;
   font-family: 'Helvetica Neue', 'Helvetica Neue', 'Helvetica Neue';
-  font-size:16px;
-  line-height:28px;
+  font-size: 16px;
+  line-height: 28px;
   ol {
     li {
       margin-bottom: 10px;
@@ -973,17 +981,18 @@ ul li {
     }
   }
 }
-
 #news-acc {
-
-
+  h3:before {
+    font-family: 'FontAwesome';
+    content: '\f1ea';
+    margin-right: 10px;
+  }
   span {
     color: #afafaf;
-    text-transform:uppercase;
-    font-size:11px;
-    float:right;
+    text-transform: uppercase;
+    font-size: 11px;
+    float: right;
   }
-
   .ui-accordion .ui-accordion-icons {
     border-radius: 0;
     background: white;
