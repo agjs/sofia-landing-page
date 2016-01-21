@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(../jquery/jquery-ui.css);
 /* line 31, ../sass/screen.scss */
 .colored-line-left, .colored-line-right, .colored-line, .white-line, .grey-line {
   height: 2px;
