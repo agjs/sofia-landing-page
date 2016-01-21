@@ -6,7 +6,7 @@ $color_lochmara_approx: #008ed6;
 $color_tundora_approx: #454545;
 $red_80: rgba(255, 0, 0, 0.8);
 $mine_shaft_8: rgba(50, 50, 50, 0.08);
-$black_80: rgba(0, 0, 0, 0.8);
+$black_80: rgba(0, 0, 0, 0.0);
 $white_90: rgba(255, 255, 255, 0.9);
 $color_geyser_approx: #dadfe3;
 $color_cararra_approx: #eaebec;
@@ -24,7 +24,7 @@ $font_2: Helvetica Neue;
 $font_3: Sans-serif;
 $font_4: Cabin;
 //urls
-$url_0: url(../images/common/header.jpeg);
+$url_0: url(../images/common/header3.jpg);
 //@extend-elements
 //original selectors
 //.colored-line-left, .colored-line-right, .colored-line, .white-line, .grey-line
@@ -71,6 +71,11 @@ body {
   margin: auto !important;
   background: #F7F8FA;
 }
+
+.fa {
+  color: $color_lochmara_approx;
+}
+
 .white-wrapper {
   width: 100%;
   background: $white;
@@ -125,7 +130,7 @@ body {
   }
   .navbar-brand img {
     -webkit-backface-visibility: hidden;
-    width: 100px;
+    width: 140px;
   }
 }
 .dropdownmenu {
@@ -139,7 +144,7 @@ body {
   position: relative;
   .sf-slider {
     height: 500px;
-    background: $url_0 no-repeat center center fixed;
+    background: $url_0 no-repeat center bottom ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -533,7 +538,7 @@ h5 {
   color: $white;
   display: table;
   overflow: hidden;
-  height: 266px;
+  height: 190px;
   width: 100%;
   bottom: 100%;
   -webkit-transition: all 0.3s;
@@ -566,7 +571,6 @@ h5 {
   background-color: $white;
   .section-overlay-layer {
     padding-top: 30px;
-    padding-bottom: 70px;
   }
   .logo-container {
     margin-top: 20px;
@@ -584,8 +588,15 @@ h5 {
   .contact-links a {
     padding-top: 65px;
     padding-bottom: 0;
+    text-decoration: none;
+    color:inherit;
   }
 }
+
+.contact-links p span{
+  font-size:11px;
+}
+
 .pirate-forms-section {
   text-align: center;
   background-color: $white;
@@ -707,9 +718,12 @@ header .navbar-brand {
   height: 70px;
   line-height: 52px;
 }
+.navbar-brand {
+  padding: 0;
+}
 .navbar-brand > img {
-  max-height: 56px;
   display: inline-block;
+  margin-top:5px;
 }
 .menu-align-center .main-navigation li a {
   margin: 0;
@@ -869,7 +883,9 @@ h5.no-span {
   display: table;
   white-space: nowrap;
   font-size: 14px;
-  color:$color_lochmara_approx;
+  text-transform: uppercase;
+  color: $color_lochmara_approx;
+  letter-spacing: 3px;
   &:before,
   &:after {
     border-top: 1px solid $color_lochmara_approx;
@@ -885,4 +901,13 @@ h5.no-span {
   &:after {
     left: 1.5%;
   }
+}
+.sofia-s {
+  font-size: 50px;
+  color: $color_lochmara_approx;
+  font-weight: bold;
+}
+
+ul li {
+  list-style-type: square;
 }
