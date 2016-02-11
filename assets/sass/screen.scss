@@ -28,6 +28,16 @@ $url_0: url(../images/common/header3.jpg);
 //@extend-elements
 //original selectors
 //.colored-line-left, .colored-line-right, .colored-line, .white-line, .grey-line
+
+.video-intro {
+  border:2px solid white;
+  width:560px;
+  height:315px;
+  margin:auto;
+
+}
+
+
 %extend_1 {
   height: 2px;
   width: 80px;
@@ -576,6 +586,11 @@ h5 {
 .member-details-inner {
   display: table-cell;
   vertical-align: middle;
+
+  i {
+    font-size:50px;
+    color:#fff;
+  }
 }
 .contact-info {
   text-align: center;
@@ -1014,6 +1029,10 @@ ul li {
   }
 }
 
+
+* {
+  border-radius: 0 !important;
+}
 
 
 
